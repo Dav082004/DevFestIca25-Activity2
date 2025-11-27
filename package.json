@@ -1,0 +1,44 @@
+{
+  "name": "snake-mcp-demo",
+  "version": "1.0.0",
+  "description": "Snake Game con bugs intencionados para demostrar GitHub MCP Server",
+  "main": "index.html",
+  "keywords": [
+    "snake-game",
+    "github-mcp-server",
+    "demo",
+    "bugs",
+    "javascript",
+    "html5-canvas"
+  ],
+  "author": "CODEON Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dav082004/CODEON-MCP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dav082004/CODEON-MCP/issues",
+    "note": "Los bugs en este proyecto son INTENCIONADOS para la demostración"
+  },
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "demo": "echo 'Abre http://localhost:8000 en tu navegador'",
+    "analyze": "gh copilot suggest --type analyze 'Analiza este Snake Game y encuentra todos los bugs'",
+    "create-issues": "gh issue create --title 'Bug Demo' --body 'Bug encontrado por MCP'"
+  },
+  "devDependencies": {},
+  "demo": {
+    "purpose": "Demostrar capacidades de GitHub MCP Server",
+    "bugs_count": 25,
+    "categories": [
+      "UI/CSS bugs (9)",
+      "Game logic bugs (7)", 
+      "Performance bugs (3)",
+      "Scoring bugs (3)",
+      "State management bugs (3)"
+    ],
+    "demo_duration": "10-12 minutos",
+    "audience": "Desarrolladores, equipos técnicos"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Snake Game - Demo MCP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐍 SNAKE GAME</h1>
+            <p class="subtitle">Demo GitHub MCP Server - ¡Juego con Bugs Intencionados!</p>
+        </header>
+
+        <div class="game-area">
+            <div class="score-container">
+                <div class="score-display">
+                    <span class="label">Puntuación:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="high-score-display">
+                    <span class="label">Mejor:</span>
+                    <span id="highScore">0</span>
+                </div>
+            </div>
+
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+            <div class="controls-info">
+                <h3>Controles:</h3>
+                <p>🔄 Usa las flechas para moverte</p>
+                <p>🎯 Come las manzanas rojas</p>
+                <p>⚠️ No toques los bordes ni tu cola</p>
+            </div>
+
+            <div class="game-controls">
+                <button id="startBtn" class="btn-start">🚀 INICIAR JUEGO</button>
+                <button id="pauseBtn" class="btn-pause">⏸️ PAUSAR</button>
+                <button id="resetBtn" class="btn-reset">🔄 REINICIAR</button>
+            </div>
+
+            <div class="game-status">
+                <div id="gameOver" class="game-over hidden">
+                    <h2>¡GAME OVER! 💀</h2>
+                    <p>Tu puntuación: <span id="finalScore">0</span></p>
+                    <button id="restartBtn" class="btn-restart">🔄 Jugar de Nuevo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="debug-panel">
+            <h3>🔧 Panel de Debug</h3>
+            <div class="debug-info">
+                <p>FPS: <span id="fps">60</span></p>
+                <p>Snake Length: <span id="snakeLength">1</span></p>
+                <p>Food Position: <span id="foodPos">N/A</span></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>🚨 Este juego contiene bugs intencionados para la demostración</p>
+            <p>GitHub MCP Server detectará y ayudará a arreglar estos problemas</p>
+        </footer>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
