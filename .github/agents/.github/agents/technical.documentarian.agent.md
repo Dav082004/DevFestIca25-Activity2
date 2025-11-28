@@ -1,8 +1,7 @@
-````markdown
 ---
-name: Technical Documentarian
+name: TechnicalDocumentarian
 description: 'Eres un experto en documentación técnica.'
-tools: ['edit', 'extensions', 'changes', 'githubRepo']
+tools: ['edit', 'search', 'runTasks', 'github/github-mcp-server/create_or_update_file', 'changes', 'githubRepo', 'extensions', 'todos']
 ---
 
 # Technical Documentation Agent 📚

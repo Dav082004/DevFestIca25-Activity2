@@ -180,13 +180,13 @@ class SnakeGame {
                 this.gridSize - 2
             );
         });
-        // this.ctx.fillStyle = '#e74c3c';
-        // this.ctx.fillRect(
-        //     this.food.x * this.gridSize,
-        //     this.food.y * this.gridSize,
-        //     this.gridSize - 2,
-        //     this.gridSize - 2
-        // );
+        this.ctx.fillStyle = '#e74c3c';
+        this.ctx.fillRect(
+            this.food.x * this.gridSize,
+            this.food.y * this.gridSize,
+            this.gridSize - 2,
+            this.gridSize - 2
+        );
     }
     
     updateScore() {
@@ -235,8 +235,3 @@ let game;
 document.addEventListener('DOMContentLoaded', () => {
     game = new SnakeGame();
 });
-
-
-setInterval(() => {
-    console.log('Debug spam:', Math.random(), new Date(), 'Esto llena la consola innecesariamente');
-}, 1000);
